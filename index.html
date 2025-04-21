@@ -11,88 +11,173 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="#about">Willian Basso</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#about">Willian Basso</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="about">
-        <h1>Olá, eu sou Willian Basso</h1>
-        <img src="./assets/foto-perfil.jpg" alt="Foto de Willian" style="width:350px;height:auto;">
-        <p>Um desenvolvedor web</p>
-        <p>
-            Desde muito jovem, sempre fui apaixonado por tecnologia — sonhava em criar sistemas, jogos e sites. Apesar
-            de
-            a vida ter me levado por outros caminhos, recentemente tive a oportunidade de retomar esse sonho, e estou me
-            dedicando com foco total.
-        </p>
-        <p>
-            Iniciei minha jornada de estudos no segundo semestre de 2024 e, desde então, venho aprendendo com
-            plataformas como freeCodeCamp, The Odin Project, MDN Web Docs, além de videoaulas no YouTube com criadores
-            como Bro Code e Kevin Powell. Também utilizo a inteligência artificial como apoio para acelerar e reforçar
-            meu aprendizado. Paralelamente,
-            estudo inglês, me preparando para atuar no mercado de tecnologia com mais segurança.
-        </p>
-        <p>
-            Hoje, sigo firme nessa jornada com o objetivo de crescer como desenvolvedor e transformar esse sonho de
-            infância em realidade.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Projetos</h2>
-        <div class="projectsContainer">
-            <div id="projectOne">
-                <img src="https://placehold.co/300x200" alt="placehold">
-                <h3>Projeto One</h3>
-                <p>Pequena descrição sobre o que serai o projeto</p>
-                <div><a href="">Botão que leva para o GitHub</a><a href="">Botão que leva para o preview</a></div>
+        <section id="about">
+            <h1>Olá, eu sou Willian Basso</h1>
+            <img class="image-perfil" src="./assets/foto-perfil-mbreduzido.jpg" alt="Foto de Willian" width="300" height="auto">
+            <h2>Um desenvolvedor web</h2>
+            <div class="technologies">
+                <img src="./assets/tecnologies/html.svg" alt="logo da tecnologia html">
+                <img src="./assets/tecnologies/css.svg" alt="logo da tecnologia css">
+                <img src="./assets/tecnologies/javascript.svg" alt="logo da tecnologia javascript">
+                <img src="./assets/tecnologies/bootstrap.svg" alt="logo da tecnologia bootstrap">
+                <img src="./assets/tecnologies/sass.svg" alt="logo da tecnologia sass">
+                <img src="./assets/tecnologies/git.svg" alt="logo do versionamento de codigo git">
+                <img src="./assets/tecnologies/github.svg" alt="logo do site de repositorios github">
+                <img src="./assets/tecnologies/react.svg" alt="logo da tecnologia React">
+                <img src="./assets/tecnologies/next.svg" alt="logo da tecnologia NextJS">
+                <img src="./assets/tecnologies/sql.svg" alt="logo da tecnologia SQL">
+                <img src="./assets/tecnologies/vscode.svg" alt="logo do editor de texto vscode">
             </div>
-            <div id="projectTwo">
-                <img src="https://placehold.co/300x200" alt="placehold">
-                <h3>Projeto Two</h3>
-                <p>Pequena descrição sobre o que serai o projeto</p>
-                <div><a href="">Botão que leva para o GitHub</a><a href="">Botão que leva para o preview</a></div>
+            <p>
+                Desde muito jovem, sempre fui apaixonado por tecnologia — sonhava em criar sistemas, jogos e sites.
+                Apesar
+                de
+                a vida ter me levado por outros caminhos, recentemente tive a oportunidade de retomar esse sonho, e
+                estou me
+                dedicando com foco total.
+            </p>
+            <p>
+                Iniciei minha jornada de estudos no segundo semestre de 2024 e, desde então, venho aprendendo com
+                plataformas como freeCodeCamp, The Odin Project, MDN Web Docs, além de videoaulas no YouTube com
+                criadores
+                como Bro Code e Kevin Powell. Também utilizo a inteligência artificial como apoio para acelerar e
+                reforçar
+                meu aprendizado. Paralelamente,
+                estudo inglês, me preparando para atuar no mercado de tecnologia com mais segurança.
+            </p>
+            <p>
+                Hoje, sigo firme nessa jornada com o objetivo de crescer como desenvolvedor e transformar esse sonho
+                de
+                infância em realidade.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="projectsContainer">
+                <div class="card-project">
+                    <img src="https://placehold.co/300x200" alt="placehold">
+                    <h3>Projeto One</h3>
+                    <p>Pequena descrição sobre o que serai o projeto</p>
+                    <div class="card-btn">
+                        <a href="#" target="_blank">
+                            Codigo no GitHub
+                            <img class="icons" src="./assets/open_in_new_opsz24.svg"
+                                alt="abrir em nova guia para GitHub">
+                        </a>
+                        <a href="#" target="_blank">
+                            Veja o projeto
+                            <img class="icons" src="./assets/open_in_new_opsz24.svg"
+                                alt="abrir em nova guia para GitHub">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="https://placehold.co/300x200" alt="placehold">
+                    <h3>Projeto Two</h3>
+                    <p>Pequena descrição sobre o que serai o projeto</p>
+                    <div class="card-btn">
+                        <a href="#" target="_blank">
+                            Codigo no GitHub
+                            <img class="icons" src="./assets/open_in_new_opsz24.svg"
+                                alt="abrir em nova guia para GitHub">
+                        </a>
+                        <a href="#" target="_blank">
+                            Veja o projeto
+                            <img class="icons" src="./assets/open_in_new_opsz24.svg"
+                                alt="abrir em nova guia para GitHub">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="https://placehold.co/300x200" alt="placehold">
+                    <h3>Projeto Three</h3>
+                    <p>Pequena descrição sobre o que serai o projeto</p>
+                    <div class="card-btn">
+                        <a href="#" target="_blank">
+                            Codigo no GitHub
+                            <img class="icons" src="./assets/open_in_new_opsz24.svg"
+                                alt="abrir em nova guia para GitHub">
+                        </a>
+                        <a href="#" target="_blank">
+                            Veja o projeto
+                            <img class="icons" src="./assets/open_in_new_opsz24.svg"
+                                alt="abrir em nova guia para GitHub">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="projectThree">
-                <img src="https://placehold.co/300x200" alt="placehold">
-                <h3>Projeto Three</h3>
-                <p>Pequena descrição sobre o que serai o projeto</p>
-                <div><a href="">Botão que leva para o GitHub</a><a href="">Botão que leva para o preview</a></div>
+        </section>
+
+        <section id="contact">
+            <h2>Entre em contato</h2>
+            <p>Você me daria uma oportunidade de contribuir e crescer com seu negócio ou projeto? Então fique à
+                vontade
+                para
+                entrar em contato por e-mail ou pelas redes sociais:</p>
+            <div>
+                <a href="mailto:willianalexbasso.wb@gmail.com" class="btn contact-btn" target="_blank">
+                    📧 E-mail
+                </a>
+                <a href="#" class="btn contact-btn" target="_blank">
+                    💼 LinkedIn
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>Entre em contato</h2>
-        <p>Você me daria uma oportunidade de contribuir e crescer com seu negócio ou projeto? Então fique à vontade para
-            entrar em contato por e-mail ou pelas redes sociais:</p>
-        <ul>
-            <li>Email: <a href="mailto:willianalexbasso.wb@gmail.com">Willianalexbasso.wb@gmail.com</a></li>
-            <li>LinkedIn: <span>[em construção]</span></li>
-        </ul>
-    </section>
+        <footer>
+            <div class="social-media">
+                <a href="" target="_blank">
+                    <img class="icon-social" src="./assets/linkedin.svg" alt="logo do linkedin">
+                    LinkedIn
+                </a>
+                <a href="" target="_blank">
+                    <img class="icon-social" src="./assets/github.svg" alt="logo do github">
+                    GitHub
+                </a>
+                <a href="" target="_blank">
+                    <img class="icon-social" src="./assets/fcc_primary_small.svg" alt="logo do site freeCodeCamp">
+                    freeCodeCamp
+                </a>
+                <a href="" target="_blank">
+                    <img class="icon-social" src="./assets/the-odin-projec.svg" alt="logo do site the odin project">
+                    The Odin Project
+                </a>
+            </div>
+            <p>&copy; 2025 Willian Basso. Site ainda passara por evoluções em um futuro</p>
+        </footer>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Willian Basso. Site ainda passara por evoluções em um futuro</p>
-        <div class="socialMedia">
-            <a href="">LinkedIn</a>
-            <a href="">GitHub</a>
-            <a href="">freeCodeCamp</a>
-            <a href="">The Odin Project</a>
-        </div>
-    </footer>
+    <button class="floating-button" aria-label="Abrir menu de navegação" id="floatingButton">
+        ☰
+    </button>
 
+    <nav class="floating-menu hidden" id="floatingMenu">
+        <a href="#about">Willian Basso</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </nav>
 
     <script src="./script.js"></script>
 </body>
